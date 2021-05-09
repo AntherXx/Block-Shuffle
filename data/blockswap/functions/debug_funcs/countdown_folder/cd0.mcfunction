@@ -1,1 +1,1 @@
-title @a clear
+title @s clear

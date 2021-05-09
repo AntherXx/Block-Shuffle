@@ -6,4 +6,4 @@ execute if score @s bs.game_going matches 1 as @a[scores={bs.current_block=400..
 execute if score @s bs.game_going matches 1 as @a[scores={bs.current_block=500..599}] run function blockswap:game_ongoing/check_block/5
 execute if score @s bs.game_going matches 1 as @a[scores={bs.current_block=600..699}] run function blockswap:game_ongoing/check_block/6
 execute if score @s bs.game_going matches 1 as @a[scores={bs.current_block=700..732}] run function blockswap:game_ongoing/check_block/7
-execute as @s[tag=!didfind] if score @s bs.game_going matches 1 as @a[tag=found] run function blockswap:game_ongoing/found_block
+execute as @s[tag=!didfind] if score @s bs.game_going matches 1 as @s[tag=found] run function blockswap:game_ongoing/found_block
