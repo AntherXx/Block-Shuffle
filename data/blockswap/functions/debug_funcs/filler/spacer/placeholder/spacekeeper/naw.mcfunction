@@ -1,0 +1,1 @@
+scoreboard players set @s i_no_like_you 1

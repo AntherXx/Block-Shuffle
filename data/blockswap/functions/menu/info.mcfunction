@@ -1,0 +1,7 @@
+scoreboard players set #general bs.read_instruc 1
+tellraw @s {"text": "---------------------------------------------", "color": "yellow", "bold": true}
+tellraw @s [{"text": "                      "},{"text":"Information Menu", "color": "yellow", "bold": true, "underlined": true}]
+tellraw @s [{"text": "Instructions: ", "color": "yellow", "bold": true, "italic": true},{"text": "Before you start the pack, PLEASE look through the settings where you can change the gamemode, block pool, and other settings related to the game, ESPECIALLY if you are playing the time mode. In there, you will also find a list of the default settings. To remove the datapack from your world, type /function blockswap:disable","bold": false,"italic": false}]
+tellraw @s {"text": "                  Return to Menu","color": "blue", "bold": true, "hoverEvent": {"action":"show_text", "value":{"text": "Click to return to the main menu.","color":"yellow"}}, "clickEvent": {"action":"run_command","value": "/function blockswap:menu/menuhome"}}
+tellraw @s {"text": "                       Credits", "color": "blue","bold": true, "hoverEvent": {"action": "show_text","value":{"text": "Click to view the credits.","color":"yellow"}}, "clickEvent": {"action": "run_command","value": "/function blockswap:menu/credits"}}
+tellraw @s {"text": "---------------------------------------------", "color": "yellow", "bold": true}

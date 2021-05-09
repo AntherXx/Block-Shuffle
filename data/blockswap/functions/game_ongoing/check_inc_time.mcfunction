@@ -1,0 +1,1 @@
+execute if score #global_find bs.blocks_found = #general bs.total_players run function blockswap:game_ongoing/check_lose_time

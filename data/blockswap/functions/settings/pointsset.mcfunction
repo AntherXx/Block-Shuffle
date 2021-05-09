@@ -1,0 +1,10 @@
+scoreboard players set #general bs.gamemode 0
+tellraw @a {"text": "---------------------------------------------", "color": "yellow", "bold": true}
+tellraw @a {"text":""}
+tellraw @a {"text":"       Set the amount of points needed to win: (Default: 10)", "color":"yellow"}
+tellraw @a {"text":""}
+tellraw @a {"text":"                    ","extra":[{"text":"[5]", "color":"blue", "hoverEvent": {"action":"show_text","value":{"text":"5 points needed to win","color":"yellow"}}, "clickEvent": {"action":"run_command","value":"/scoreboard players set #general bs.block_limit 5"}},{"text":"   "},{"text":"[10]", "color":"blue", "hoverEvent": {"action":"show_text","value":{"text":"10 points needed to win (default)","color":"yellow"}}, "clickEvent": {"action":"run_command","value":"/scoreboard players set #general bs.block_limit 10"}},{"text":"   "},{"text":"[20]", "color":"blue", "hoverEvent": {"action":"show_text","value":{"text":"20 points needed to win","color":"yellow"}}, "clickEvent": {"action":"run_command","value":"/scoreboard players set #general bs.block_limit 20"}},{"text":"   "},{"text":"[30]", "color":"blue", "hoverEvent": {"action":"show_text","value":{"text":"30 points needed to win","color":"yellow"}}, "clickEvent": {"action":"run_command","value":"/scoreboard players set #general bs.block_limit 30"}}]}
+tellraw @a {"text":""}
+tellraw @s {"text": "                Return to Settings","color": "blue", "bold": true, "hoverEvent": {"action":"show_text", "value":{"text": "Click to return to the main settings.","color":"yellow"}}, "clickEvent": {"action":"run_command","value": "/function blockswap:menu/picksettings"}}
+tellraw @s {"text": "                  Return to Menu","color": "blue", "bold": true, "hoverEvent": {"action":"show_text", "value":{"text": "Click to return to the main menu.","color":"yellow"}}, "clickEvent": {"action":"run_command","value": "/function blockswap:menu/menuhome"}}
+tellraw @a {"text": "---------------------------------------------", "color": "yellow", "bold": true}

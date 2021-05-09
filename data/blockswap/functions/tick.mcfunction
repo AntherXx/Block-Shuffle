@@ -1,0 +1,2 @@
+execute as @a if score @s bs.game_going matches 1 run function blockswap:game_ongoing/check_block/check_block
+execute as @a if score #general bs.gamemode matches 1 run execute if score @s bs.game_going matches 1 run function blockswap:game_ongoing/check_inc_time

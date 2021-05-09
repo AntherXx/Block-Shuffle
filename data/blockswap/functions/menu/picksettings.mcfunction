@@ -1,0 +1,9 @@
+tellraw @a {"text": "---------------------------------------------", "color": "yellow", "bold": true}
+tellraw @a {"text":"To select a gamemode, click on it in this menu. This will also take you to the settings for this specific gamemode. (Default: Points)", "color": "yellow"}
+tellraw @a {"text":""}
+tellraw @a {"text":"                       Points", "color": "blue", "bold": true, "hoverEvent": {"action":"show_text","value":{"text": "Click here to set the Points gamemode and go to settings.", "color": "yellow"}}, "clickEvent": {"action":"run_command","value":"/function blockswap:settings/pointsset"}}
+tellraw @a {"text":"                        Time", "color": "blue", "bold": true, "hoverEvent": {"action":"show_text","value":{"text":"Click here to set the Time gamemode and go to settings.", "color": "yellow"}}, "clickEvent": {"action":"run_command","value":"/function blockswap:settings/timeset"}}
+tellraw @a {"text":"                       *Extra Features*", "color":"blue", "hoverEvent": {"action":"show_text","value":{"text": "Click here to set the extra features. (Block pool/Starting Items)", "color": "yellow"}}, "clickEvent": {"action":"run_command","value":"/function blockswap:settings/extrafeatures"}}
+tellraw @a {"text":""}
+tellraw @s {"text": "                  Return to Menu","color": "blue", "bold": true, "hoverEvent": {"action":"show_text", "value":{"text": "Click to return to the main menu.","color":"yellow"}}, "clickEvent": {"action":"run_command","value": "/function blockswap:menu/menuhome"}}
+tellraw @a {"text": "---------------------------------------------", "color": "yellow", "bold": true}

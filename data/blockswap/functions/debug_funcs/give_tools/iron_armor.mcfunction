@@ -1,0 +1,9 @@
+execute as @a run give @s minecraft:iron_sword
+execute as @a run give @s minecraft:iron_pickaxe
+execute as @a run give @s minecraft:iron_shovel
+execute as @a run give @s minecraft:iron_axe
+execute as @a run give @s minecraft:iron_helmet
+execute as @a run give @s minecraft:iron_chestplate
+execute as @a run give @s minecraft:iron_leggings
+execute as @a run give @s minecraft:iron_boots
+execute as @a run give @s minecraft:shield

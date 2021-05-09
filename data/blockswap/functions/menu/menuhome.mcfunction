@@ -1,0 +1,11 @@
+tellraw @a {"text": "---------------------------------------------", "color": "yellow", "bold": true}
+tellraw @a {"text": "   Hello, welcome to the Block Shuffle Datapack by", "color": "yellow", "bold": true}
+tellraw @a {"text": "                      AntherXx!", "color": "yellow", "bold": true}
+tellraw @a {"text": "   (Please do not start until you read the instructions listed", "color": "yellow"}
+tellraw @a [{"text": "                     under ", "color": "yellow"},{"text": "Information","color": "yellow","bold": true},")"]
+tellraw @a [{"text": "            All hyperlinks are in ", "color": "yellow", "bold": true},{"text": "blue.", "color":"blue", "hoverEvent": {"action":"show_text","value":{"text": "This is not a hyperlink :(","color":"yellow"}}}]
+execute if score #general bs.read_instruc matches 0 run tellraw @a {"text": "                        Start", "hoverEvent":{"action":"show_text","value":{"text":"I said to read the instructions >:(","color":"red"}},"bold":true,"color":"yellow"}
+execute if score #general bs.read_instruc matches 1 run tellraw @a {"text": "                        Start", "hoverEvent": {"action":"show_text","value":{"text":"","extra":[{"text":"Click here to start game.","color":"yellow"}]}}, "clickEvent": {"action":"run_command","value":"/function blockswap:debug_funcs/start_countdown"}, "color": "blue", "bold": true}
+tellraw @a {"text": "                    Information", "hoverEvent": {"action":"show_text","value":{"text":"","extra":[{"text":"Shows instructions to play and credits.","color":"yellow"}]}}, "clickEvent": {"action": "run_command","value":"/function blockswap:menu/info"}, "color": "blue", "bold": true}
+tellraw @a {"text": "                      Settings", "hoverEvent": {"action":"show_text","value":{"text":"","extra":[{"text":"Allows you to reach the different settings menus.","color":"yellow"}]}}, "clickEvent": {"action": "run_command","value": "/function blockswap:menu/picksettings"}, "color": "blue", "bold": true}
+tellraw @a {"text": "---------------------------------------------", "color": "yellow", "bold": true}
